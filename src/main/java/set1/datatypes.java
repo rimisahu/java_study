@@ -4,6 +4,25 @@ public class datatypes {
 
     public static void main(String[] args){
 
+        /*
+        primitive datatypes
+            - byte
+            - short
+            - float
+
+            - int
+            - long
+            - float
+            - double
+            - char
+            - boolean
+
+         non primitive
+            - string
+
+         */
+
+
 
         System.out.println();
         System.out.println("int data type test");
