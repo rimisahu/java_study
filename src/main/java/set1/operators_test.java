@@ -30,9 +30,11 @@ public class operators_test {
 
         //(5==5) --> check if the condition is true
         //true --> if condition ^ is true, then choose this
-        //false --> if condition ^ is false, then choose this
+        //false --> if condition ^ is false, then choose false
         boolean result= (5==5) ? true : false;
         System.out.println("\nternary operator result: "+result);
+
+
 
     }
 }
