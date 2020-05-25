@@ -2,13 +2,18 @@ package set3;
 
 public class test1 {
 
+    private static final String INVALID_MESSAGE="Invalid value";
+
     public static void main(String[] args){
 
         System.out.println(calcFeetInchesToCM(6,-13));
         System.out.println(calcFeetInchesToCM(100));
 
-        System.out.println(getDurStr(90));
+        System.out.println("\n"+getDurStr(90));
         System.out.println(getDurStr(61,0));
+        System.out.println("\n testing invalid msgs");
+        System.out.println(getDurStr(234,66));
+        System.out.println(getDurStr(-1));
 
     }
 
@@ -32,7 +37,7 @@ public class test1 {
 
     public static String getDurStr( int minuteVal, int secondVal){
         if (minuteVal<0 || secondVal<0 || secondVal>59){
-            return "Invalid value";
+            return INVALID_MESSAGE;
         }
         int totalSec=minuteVal*60 + secondVal;
         int totalhours=totalSec/3600;
@@ -43,6 +48,8 @@ public class test1 {
     }
 
     public static String getDurStr(int secondVal){
+        if (secondVal<0){return INVALID_MESSAGE;}
+
         int totalMins=secondVal/60;
         int leftSecs=secondVal%60;
         return getDurStr(totalMins,leftSecs);
