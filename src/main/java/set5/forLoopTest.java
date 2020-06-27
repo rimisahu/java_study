@@ -18,6 +18,8 @@ public class forLoopTest {
             }
         }
 
+
+
         System.out.println("Aaaand the final sum is ... " + sum);
     }
 }
